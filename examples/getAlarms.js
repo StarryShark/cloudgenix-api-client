@@ -1,5 +1,3 @@
-/* eslint-disable no-process-env */
-
 const CloudGenix = require('../index');
 
 const cg = new CloudGenix({
@@ -8,12 +6,18 @@ const cg = new CloudGenix({
 });
 
 cg.login()
-  .then(() => cg.getAllEvents({'timeDelta': 10}))
+  .then(() => cg.getAllEvents({
+    'exclude': [
+      'APPLICATION_APP_UNREACHABLE',
+      'APPLICATION_APP_UNKNOWN',
+      'APPLICATION_IP_COLLISION'
+    ]
+  }))
   .then((value) => {
-
-    console.log(value, value.length);
+    console.log(JSON.stringify(value, null, 2), value.length);
     return cg.logout();
-
   })
-  .then((value) => console.log(value))
-  .catch((reason) => console.log(reason));
+  .catch((reason) => {
+    console.log(reason);
+    cg.logout();
+  });
