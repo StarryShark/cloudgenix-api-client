@@ -22,16 +22,16 @@
   },
   "homepage": "https://github.com/sumitgoelpw/cloudgenix-api-client#readme",
   "dependencies": {
-    "debug": "3.0.1",
-    "moment": "2.18.1",
-    "request": "2.81.0",
-    "request-promise-native": "1.0.4"
+    "debug": "3.1.0",
+    "moment": "2.20.1",
+    "request": "2.83.0",
+    "request-promise-native": "1.0.5"
   },
   "devDependencies": {
-    "eslint": "4.6.1",
-    "eslint-config-sumitgoelpw": "1.0.8",
-    "npm-check": "5.4.5",
-    "nsp": "2.8.0"
+    "eslint": "4.16.0",
+    "eslint-config-sumitgoelpw": "github:sumitgoelpw/eslint-config-sumitgoelpw",
+    "npm-check": "5.5.2",
+    "nsp": "3.1.0"
   },
   "eslintConfig": {
     "extends": "sumitgoelpw"
