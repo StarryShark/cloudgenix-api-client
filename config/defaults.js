@@ -6,6 +6,7 @@ module.exports = {
     'query_events': 'v3.0',
     'sites': 'v4.1',
     'elements': 'v2.0',
+    'machines': 'v2.0',
     'logout': 'v2.0'
   },
   'uriMap': {
@@ -14,6 +15,7 @@ module.exports = {
     'query_events': '/%s/api/tenants/%s/events/query',
     'sites': '/%s/api/tenants/%s/sites',
     'elements': '/%s/api/tenants/%s/elements',
+    'machines': '/%s/api/tenants/%s/machines',
     'logout': '/%s/api/logout'
   }
 };
