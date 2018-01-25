@@ -6,13 +6,7 @@ const cg = new CloudGenix({
 });
 
 cg.login()
-  .then(() => cg.getAllEvents({
-    'exclude': [
-      'APPLICATION_APP_UNREACHABLE',
-      'APPLICATION_APP_UNKNOWN',
-      'APPLICATION_IP_COLLISION'
-    ]
-  }))
+  .then(() => cg.getAllEvents())
   .then((value) => {
     console.log(JSON.stringify(value, null, 2), value.length);
     return cg.logout();
