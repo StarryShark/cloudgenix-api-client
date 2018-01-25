@@ -1,6 +1,6 @@
 {
   "name": "cloudgenix-api-client",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "CloudGenix API Client with Node.js Promise Support.",
   "main": "index.js",
   "scripts": {
